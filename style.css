@@ -389,9 +389,13 @@ margin-top: 120px;
   gap: 30px;
   margin-top: 44px;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
      background: #E8F0FE;
   color: #000;
   border-radius: 10px;
@@ -1168,7 +1172,7 @@ a {
 
         @media (min-width: 1024px) {
 
-              .slide-button {
+        .slide-button {
     position: relative;
     padding: 16px 9px;
     background: rgb(32, 33, 36);
@@ -1178,6 +1182,10 @@ a {
     cursor: pointer;
     overflow: hidden;
     transition: background 0.3s ease;
+              }
+
+              .btn-end {
+                width: 22%;
               }
 
     .footer-desktop {
@@ -1192,6 +1200,22 @@ a {
     .footer-container {
         max-width: 1400px;
     }
+}
+
+@media (max-width: 1080px) {
+
+.end p {
+    font-size: 15px;
+}
+
+ .btn-end {
+                width: 22%;
+              }
+
+    .testimonial-row {
+      padding: 0 20px;
+}
+
 }
 
 @media (min-width: 1440px) {
