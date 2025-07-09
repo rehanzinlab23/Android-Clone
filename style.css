@@ -1517,6 +1517,17 @@ a {
     }
 }
 
+@media (max-width: 390px) {
+
+  .end p {
+        font-size: 15px;
+    }
+
+  .btn-end {
+          width: 58%;
+    }
+}
+
         @media (max-width: 360px) {
 
 .hero-heading {
