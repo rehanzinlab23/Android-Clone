@@ -1480,13 +1480,13 @@ a {
 
         }
 
-         @media (max-width: 418px) {
+         @media (max-width: 420px) {
  .end p {
-    font-size: 18px;
+    font-size: 15px;
 }
 
     .btn-end {
-        width: 48%;
+        width: 56%;
     }
 
          }
