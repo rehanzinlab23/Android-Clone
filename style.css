@@ -30,22 +30,79 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 4rem;
+            height: 5rem;
         }
 
-        .styled-select-1 {
-          padding: 10px 15px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background: none;
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-    appearance: none;
-      background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right -4px center;
-        }
+/* Desktop Navigation  */
+
+      nav ul li {
+display: inline-block;
+list-style: none;
+margin: 0  30px;
+}
+
+nav ul {
+      transition: all 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease-in-out 0.3s;
+    font-size: 18px;
+}
+
+nav ul.submenu li a span:hover {
+  border-bottom: 1px solid black;
+}
+
+nav ul li a span:hover {
+    border-bottom: 1px solid black;
+}
+
+nav ul li a i {
+   padding: 10px 20px;
+     transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover  {
+  i {
+    transform: rotate(180deg);
+  }
+}
+
+nav ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 10px black;
+    border-radius: 20px;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+nav ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+nav ul .submenu li {
+    margin: 0;
+    width: 100px;
+        display: inline;
+}
+
+nav ul .submenu li a {
+    padding: 13px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
         /* Logo Styles */
         .logo {
             display: flex;
@@ -1294,7 +1351,7 @@ a {
                 padding: 0 16px;
             }
 
-            .styled-select-1 {
+            nav ul {
                 display: none;
             }
 
